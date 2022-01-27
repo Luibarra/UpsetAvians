@@ -25,7 +25,7 @@ public class Spawn : MonoBehaviour
     {
         Rigidbody2D[] bodies = FindObjectsOfType(typeof(Rigidbody2D)) as Rigidbody2D[];
         foreach (Rigidbody2D rb in bodies)
-            if (rb.velocity.sqrMagnitude > 5)
+            if (rb.velocity.sqrMagnitude > 4)
                 return true;
 
         return false; 
